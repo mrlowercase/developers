@@ -413,10 +413,8 @@ span{
             color: white;
             border: none;
             cursor: pointer;
-            text-align: center;
             align-self: flex-end;
             font-size: 22px;
-            align-items: center;
             font-family: Arial, Helvetica, sans-serif;
             
         }
