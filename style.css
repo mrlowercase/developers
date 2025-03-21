@@ -440,50 +440,60 @@ span{
 }
 
 .faq-section {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    color: gray;
-    text-align: center;
-    justify-content: center;
-}
-
-.accordion-item {
-    border: 1px solid #ddd;
-    margin: 10px 0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.accordion{
-    margin-top: 50px;
-}
-.accordion-header {
-    color: gray ;
-    border: none;
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.accordion-header:hover {
-    color: rgb(8, 124, 182);
-    background-color: white;
-}
-
-.accordion-content {
-    display: none;
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    background: #fff;
-}
-
-footer {
-    margin-top: 80px;
-    padding: 10px;
-}
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            color: gray;
+            text-align: center;
+            justify-content: center;
+        }
+        .accordion-item {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+        details {
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        summary {
+            color: gray;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            background: #f9f9f9;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         summary::after {
+            content: "\25C0"; /* Leftward arrow */
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+        details[open] summary::after {
+            content: "\25BC"; /* Downward arrow when open */
+        }
+        summary:hover {
+            color: rgb(8, 124, 182);
+            background-color: white;
+        }
+        .accordion-content {
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            background: #fff;
+        }
+        footer {
+            margin-top: 80px;
+            padding: 10px;
+        }
 
 
 
