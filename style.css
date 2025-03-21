@@ -407,20 +407,23 @@ span{
             resize: none;
             height: 200px;
         }
-        .contact-form button {
+          .contact-form button {
             padding: 10px 35px;
             background-color: #2c9c6a;
             color: white;
             border: none;
             cursor: pointer;
+            text-align: center;
             align-self: flex-end;
             font-size: 22px;
+            align-items: center;
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
+            
         }
         .contact-form button:hover {
           background-color: darkgreen;
         }
+
         .address {
             text-align: left;
         }
